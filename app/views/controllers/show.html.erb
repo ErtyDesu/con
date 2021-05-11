@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @controller.nome %>
+</p>
+
+<p>
+  <strong>Gioco:</strong>
+  <%= @controller.gioco %>
+</p>
+
+<p>
+  <strong>Disponibilita:</strong>
+  <%= @controller.disponibilita %>
+</p>
+
+<p>
+  <strong>Prezzo:</strong>
+  <%= @controller.prezzo %>
+</p>
+
+<%= link_to 'Edit', edit_controller_path(@controller) %> |
+<%= link_to 'Back', controllers_path %>
