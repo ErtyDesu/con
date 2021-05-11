@@ -11,27 +11,30 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :nome %>
-    <%= form.text_field :nome %>
-  </div>
-
-  <div class="field">
-    <%= form.label :gioco %>
-    <%= form.text_area :gioco %>
-  </div>
-
-  <div class="field">
-    <%= form.label :disponibilita %>
-    <%= form.check_box :disponibilita %>
-  </div>
-
-  <div class="field">
-    <%= form.label :prezzo %>
-    <%= form.number_field :prezzo %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm form-label">
+          <%= form.label :nome, class: 'form-label'%>
+          <%= form.text_field :nome, class: 'form-control' %>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm form-label">
+          <%= form.label :gioco, class: 'form-label'%>
+          <%= form.text_field :gioco, class: 'form-control' %>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm form-label">
+          <%= form.label :prezzo, class: 'form-label' %>
+          <%= form.number_field :prezzo, class: 'form-control' %>
+        </div>
+      </div>
+    </div>
+</div>
 <% end %>
