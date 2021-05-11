@@ -21,8 +21,8 @@
         <td><%= controller.disponibilita %></td>
         <td><%= controller.prezzo %></td>
         <td>
-          <% if controller.cover.attached? %>
-          <%= link_to (image_tag url_for(controller.cover) ,:class => "w-50"), prodotti %>
+          <% if @controller.cover.attached? %>
+          <%= link_to (image_tag url_for(@controller.cover) ,:class => "w-50"), prodotti %>
           <% end %>
         </td>
         <td><%= link_to 'Edit', edit_controller_path(controller), class: 'btn btn-primary' %></td>
